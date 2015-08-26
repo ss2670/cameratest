@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/plainButton"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="Hello IIE" />
+
+    <Button
+        android:id="@+id/plainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="60dp"
+        android:text="明文发送" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/cipherButton"
+        android:layout_below="@+id/plainButton"
+        android:ems="10"
+        android:text="no=13381203165,sms=whoknows" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/content"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:text="192.168.1.2" />
+
+    <Button
+        android:id="@+id/takepictures"
+        style="@style/AppBaseTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="13dp"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/cipherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/plainButton"
+        android:layout_marginTop="11dp"
+        android:text="加密发送" />
+
+</RelativeLayout>
