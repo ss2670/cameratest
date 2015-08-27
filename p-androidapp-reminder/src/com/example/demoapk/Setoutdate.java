@@ -6,6 +6,7 @@ import java.sql.Date;
 import java.sql.Time;
 import java.util.Calendar;
 
+
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -81,10 +82,10 @@ public class Setoutdate  extends Activity{
 	  private final static String TAG = "CameraActivity";  
 	
 	    private ImageView imageView;
-	    private CalendarView cv;
+	   // private CalendarView cv;
 	    private DatePicker datepicker;
 	    private Calendar c;
-	    private File picture;  
+	   // private File picture;  
 	    private Button btnSave;  
 	    private String dateEx;
 	    private String paddrEx;
@@ -201,12 +202,12 @@ public class Setoutdate  extends Activity{
 	            case R.id.setoutdate_button:{
 	            	 insertRecord(paddrEx,dateEx,"9:00:00");
 		              Date date=new Date(0L);
-		              date.setYear(year);
+		             /*date.setYear(year);
 		              date.setMonth(monthOfYear);
 		              date.setDate(dayOfMonth);
 		              date.setHours(9);
 		              date.setMinutes(0);
-		              date.setSeconds(0);
+		              date.setSeconds(0);*/
 		              // Time t = new Time();
 		              Log.v(TAG,"set reminder date "+date.toString());
 		               setReminder(date);

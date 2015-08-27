@@ -7,4 +7,8 @@
     <string name="takepictures">拍照</string>
     <string name="setoutdate">设置提醒日期</string>
   <string name="savepictures">拍照保存</string>
+  <string name="sendbyplaintext">明文发送</string>
+  <string name="sms">no=13381203165,sms=empty</string>
+  <string name="ip">192.168.0.1</string>
+  <string name="sendbycipher">加密发送</string>
 </resources>

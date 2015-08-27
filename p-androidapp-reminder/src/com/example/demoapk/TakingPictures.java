@@ -4,19 +4,9 @@ package com.example.demoapk;
 
 
 
-import java.io.FileOutputStream;
-import java.io.IOException;
 
-import android.hardware.Camera;
-import android.hardware.Camera.AutoFocusCallback;
-import android.hardware.Camera.Parameters;
-import android.hardware.Camera.PictureCallback;
-import android.os.Bundle;
 import android.app.Activity;
-import android.view.SurfaceHolder;
-import android.view.SurfaceHolder.Callback;
-import android.view.SurfaceView;
-import android.view.View;
+
 
 public class TakingPictures  extends Activity {
   

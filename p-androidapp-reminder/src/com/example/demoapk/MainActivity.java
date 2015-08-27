@@ -16,6 +16,7 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
 
+
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.app.Activity;
@@ -35,12 +36,12 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 	 Button plainSent,cipherSent,takepictures;
 	 EditText address,content;
 	 TextView tv;
-	 private static final String HOST = "192.168.0.132";//"192.168.110.63";  
+	// private static final String HOST = "192.168.0.132";//"192.168.110.63";  
 	 private static final int PORT = 4700;  
 	
 	 
 	 private static final int SERVER_PORT = 7070;//端口号   
-     private static final String SERVER_IP = "192.168.1.6";//连接IP   
+     //private static final String SERVER_IP = "192.168.1.6";//连接IP   
      private static final String CLIENT_KET_PASSWORD = "000000";//私钥密码   
      private static final String CLIENT_TRUST_PASSWORD = "000000";//信任证书密码   
      private static final String CLIENT_AGREEMENT = "TLS";//使用协议   
@@ -48,7 +49,7 @@ public class MainActivity extends Activity implements Button.OnClickListener {
      private static final String CLIENT_TRUST_MANAGER = "X509";//   
      private static final String CLIENT_KEY_KEYSTORE = "BKS";//密库，这里用的是BouncyCastle密库   
      private static final String CLIENT_TRUST_KEYSTORE = "BKS";//   
-     private static final String ENCONDING = "utf-8";//字符集   
+     //private static final String ENCONDING = "utf-8";//字符集   
      private SSLSocket Client_sslSocket;   
   
 	@Override
@@ -200,7 +201,7 @@ class plainSocket implements Runnable {
 	class sslSocket implements Runnable {
 		 private SSLSocket income=null;
 		 private String text=null;
-		    private Log tag;   
+		  //  private Log tag;   
 
 		public sslSocket(SSLSocket i,String t){
 			income=i;
